@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "page-theme",
+  "version": "0.1.0",
+  "description": "使用darkmode-js设置网页的light模式或者dark模式",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content/darkmode-js.min.js",
+        "content/index.js"
+      ]
+    }
+  ]
+}
